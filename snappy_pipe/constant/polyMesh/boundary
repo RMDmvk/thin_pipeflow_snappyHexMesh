@@ -15,14 +15,25 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-1
+3
 (
-    cylinder
+    movingWall
     {
-        type            wall;
-        inGroups        1(wall);
-        nFaces          192664;
-        startFace       2055164;
+        type            patch;
+        nFaces          2000;
+        startFace       115600;
+    }
+    fixedWalls
+    {
+        type            patch;
+        nFaces          6000;
+        startFace       117600;
+    }
+    frontAndBack
+    {
+        type            patch;
+        nFaces          800;
+        startFace       123600;
     }
 )
 
