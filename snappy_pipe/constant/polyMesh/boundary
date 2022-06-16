@@ -17,23 +17,24 @@ FoamFile
 
 3
 (
-    movingWall
+    topPatch
     {
         type            patch;
-        nFaces          2000;
-        startFace       115600;
+        nFaces          8632;
+        startFace       2055164;
     }
-    fixedWalls
+    wall
     {
-        type            patch;
-        nFaces          6000;
-        startFace       117600;
+        type            wall;
+        inGroups        1(wall);
+        nFaces          175400;
+        startFace       2063796;
     }
-    frontAndBack
+    bottomPatch
     {
         type            patch;
-        nFaces          800;
-        startFace       123600;
+        nFaces          8632;
+        startFace       2239196;
     }
 )
 
