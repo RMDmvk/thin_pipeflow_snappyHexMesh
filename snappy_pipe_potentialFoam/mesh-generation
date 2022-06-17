@@ -1,0 +1,15 @@
+
+./Allclean
+
+
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions      # Tutorial clean functions
+
+
+restore0Dir
+
+runApplication blockMesh > blockMesh.log
+runApplication snappyHexMesh -overwrite > snappyHexMesh.log
+runApplication topoSet > topoSet.log
+runApplication createPatch -overwrite > cratePatch.log
+touch snappy_pipe.foam
