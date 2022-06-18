@@ -120,7 +120,8 @@ castellatedMeshControls
         cylinder
         {
             // Surface-wise min and max refinement level
-            level (2 5);
+            level (3  5);
+
         }
     }
 
@@ -141,9 +142,10 @@ castellatedMeshControls
     //   needs to be closed for this to be possible.
     // - outside. Same but cells outside.
 
+    
     refinementRegions
     {
-      topPtchBox
+/*      topPtchBox
       {
          mode inside;
 	 levels ((1.0 3));
@@ -155,7 +157,9 @@ castellatedMeshControls
          levels ((1.0 3));	 
 
       }
+*/      
     }
+
 
 
     // Mesh selection

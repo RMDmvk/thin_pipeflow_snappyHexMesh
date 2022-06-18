@@ -9,11 +9,11 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
 Date   : Jun 17 2022
-Time   : 13:29:14
+Time   : 16:42:25
 Host   : DESKTOP-P5PIKCI
-PID    : 961
+PID    : 8175
 I/O    : uncollated
-Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/snappy_pipe
+Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/pisoFoam_snappy_pipe
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -47,8 +47,8 @@ Creating patches
 Creating cells
 Creating points with scale 1
     Block 0 cell size :
-        i : 0.1 .. 0.1
-        j : 0.1 .. 0.1
+        i : 0.4 .. 0.4
+        j : 0.4 .. 0.4
         k : 0.42 .. 0.42
 
 
@@ -59,16 +59,16 @@ Writing polyMesh with 0 cellZones
 Mesh Information
 ----------------
   boundingBox: (-1 -1 -1) (1 1 41)
-  nPoints: 44541
-  nCells: 40000
-  nFaces: 124400
-  nInternalFaces: 115600
+  nPoints: 3636
+  nCells: 2500
+  nFaces: 8525
+  nInternalFaces: 6475
 ----------------
 Patches
 ----------------
-  patch 0 (start: 115600 size: 2000) name: movingWall
-  patch 1 (start: 117600 size: 6000) name: fixedWalls
-  patch 2 (start: 123600 size: 800) name: frontAndBack
+  patch 0 (start: 6475 size: 500) name: movingWall
+  patch 1 (start: 6975 size: 1500) name: fixedWalls
+  patch 2 (start: 8475 size: 50) name: frontAndBack
 
 End
 

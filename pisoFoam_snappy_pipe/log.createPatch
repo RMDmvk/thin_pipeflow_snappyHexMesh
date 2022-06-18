@@ -9,11 +9,11 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : createPatch -overwrite
 Date   : Jun 17 2022
-Time   : 13:31:17
+Time   : 16:43:12
 Host   : DESKTOP-P5PIKCI
-PID    : 964
+PID    : 8178
 I/O    : uncollated
-Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/snappy_pipe
+Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/pisoFoam_snappy_pipe
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -42,9 +42,9 @@ Adding new patch bottomPatch as patch 3 from
 }
 
 
-Read 5744 faces from faceSet topPatch
-Read 50360 faces from faceSet wall
-Read 5752 faces from faceSet bottomPatch
+Read 1760 faces from faceSet topPatch
+Read 46048 faces from faceSet wall
+Read 1760 faces from faceSet bottomPatch
 
 Doing topology modification to order faces.
 

@@ -9,11 +9,11 @@ Build  : _7bdb509494-20201222 OPENFOAM=2012
 Arch   : "LSB;label=32;scalar=64"
 Exec   : topoSet
 Date   : Jun 17 2022
-Time   : 13:31:15
+Time   : 16:43:11
 Host   : DESKTOP-P5PIKCI
-PID    : 963
+PID    : 8177
 I/O    : uncollated
-Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/snappy_pipe
+Case   : /home/rmd/GitHub_OpenFOAM/thin_pipeflow_snappyHexMesh/pisoFoam_snappy_pipe
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -31,44 +31,44 @@ Time = 0
 Created faceSet cylinder
     Applying source patchToFace
     Adding all faces of patches (cylinder) ...
-    Found matching patch cylinder with 61856 faces.
-    faceSet cylinder now size 61856
+    Found matching patch cylinder with 49568 faces.
+    faceSet cylinder now size 49568
 Created faceSet bottom_patch_negative
     Applying source boxToFace
     Adding faces with centre within boxes 1((-0.6 -0.6 0.01) (0.6 0.6 41))
-    faceSet bottom_patch_negative now size 610892
+    faceSet bottom_patch_negative now size 543516
 Created faceSet top_patch_negative
     Applying source boxToFace
     Adding faces with centre within boxes 1((-0.6 -0.6 -1) (0.6 0.6 39.99))
-    faceSet top_patch_negative now size 610956
+    faceSet top_patch_negative now size 543516
 Created faceSet bottomPatch
     Applying source faceToFace
     Adding all elements of faceSet (cylinder)
-    faceSet bottomPatch now size 61856
-Read set faceSet bottomPatch with size 61856
+    faceSet bottomPatch now size 49568
+Read set faceSet bottomPatch with size 49568
     Applying source faceToFace
     Removing all elements of faceSet (bottom_patch_negative)
-    faceSet bottomPatch now size 5752
+    faceSet bottomPatch now size 1760
 Created faceSet topPatch
     Applying source faceToFace
     Adding all elements of faceSet (cylinder)
-    faceSet topPatch now size 61856
-Read set faceSet topPatch with size 61856
+    faceSet topPatch now size 49568
+Read set faceSet topPatch with size 49568
     Applying source faceToFace
     Removing all elements of faceSet (top_patch_negative)
-    faceSet topPatch now size 5744
+    faceSet topPatch now size 1760
 Created faceSet wall
     Applying source faceToFace
     Adding all elements of faceSet (cylinder)
-    faceSet wall now size 61856
-Read set faceSet wall with size 61856
+    faceSet wall now size 49568
+Read set faceSet wall with size 49568
     Applying source faceToFace
     Removing all elements of faceSet (bottomPatch)
-    faceSet wall now size 56104
-Read set faceSet wall with size 56104
+    faceSet wall now size 47808
+Read set faceSet wall with size 47808
     Applying source faceToFace
     Removing all elements of faceSet (topPatch)
-    faceSet wall now size 50360
+    faceSet wall now size 46048
 
 End
 
